@@ -1,0 +1,63 @@
+.testimonial-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.testimonial-card h2{
+
+    margin-top:15px;
+
+    color:#ff1493;
+
+}
+
+.testimonial-card h4{
+
+    color:#666;
+
+    margin:10px 0;
+
+}
+
+.location{
+
+    color:#555;
+
+    font-weight:bold;
+
+}
+
+.stars{
+
+    font-size:22px;
+
+    margin:15px 0;
+
+}
+
+.review{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-style:italic;
+
+}
