@@ -9,12 +9,12 @@ function Navbar() {
 
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/About.jsx">About</Link></li>
-        <li><Link to="/Packages.jsx">Packages</Link></li>
-        <li><Link to="/Gallery.jsx">Gallery</Link></li>
-        <li><Link to="/Services.jsx">Services</Link></li>
-        <li><Link to="/Testimonials.jsx">Testimonials</Link></li>
-        <li><Link to="/Contact.jsx">Contact</Link></li>
+        <li><Link to="/About">About</Link></li>
+        <li><Link to="/Packages">Packages</Link></li>
+        <li><Link to="/Gallery">Gallery</Link></li>
+        <li><Link to="/Services">Services</Link></li>
+        <li><Link to="/Testimonials">Testimonials</Link></li>
+        <li><Link to="/Contact">Contact</Link></li>
       </ul>
     </nav>
   );

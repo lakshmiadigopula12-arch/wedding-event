@@ -10,15 +10,15 @@ import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/About.jsx" element={<About />} />
-      <Route path="/Packages.jsx" element={<Packages />} />
-      <Route path="/Gallery.jsx" element={<Gallery />} />
-      <Route path="/Services.jsx" element={<Services />} />
-      <Route path="/Testimonials.jsx" element={<Testimonials />} />
-      <Route path="/Contact.jsx" element={<Contact />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/packages" element={<Packages />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
   );
 }
 
