@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+import "./About.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -8,29 +11,46 @@ function About() {
 
       <section className="about">
 
-        <div className="about-content">
+        {/* Images + Text */}
+        <div className="about-container">
 
-          <h1>About Lakshmi's Wedding Event</h1>
+          <div className="about-images">
 
-          <p>
-            Welcome to <strong>Lakshmi's Wedding Event</strong>, where dreams
-            become unforgettable celebrations. We specialize in designing
-            elegant, joyful, and memorable weddings that reflect your unique
-            love story. From intimate ceremonies to grand receptions, our
-            experienced team takes care of every detail with creativity,
-            dedication, and perfection.
-          </p>
+            <img src="/wedding-event/images/H7.jpeg" alt="Wedding Stage" />
 
-          <p>
-            We believe every wedding is special, and our mission is to create
-            magical moments that you and your loved ones will cherish forever.
-            With stunning decorations, professional planning, delicious
-            catering, talented photographers, and exceptional hospitality, we
-            ensure a stress-free and unforgettable wedding experience.
-          </p>
+            <img src="/wedding-event/images/T&C1.jpeg" alt="Wedding Couple" />
+
+            <img src="/wedding-event/images/Service1.jpeg" alt="Wedding Decoration" />
+
+          </div>
+
+          <div className="about-content">
+
+            <h1>About Lakshmi's Wedding Event</h1>
+
+            <p>
+              Welcome to <strong>Lakshmi's Wedding Event</strong>, where dreams
+              become unforgettable celebrations. We specialize in designing
+              elegant, joyful, and memorable weddings that reflect your unique
+              love story.
+            </p>
+
+            <p>
+              We believe every wedding is special, and our mission is to create
+              magical moments that you and your loved ones will cherish forever.
+            </p>
+
+            <Link to="/Packages">
+              <button className="about-btn">
+                Learn More
+              </button>
+            </Link>
+
+          </div>
 
         </div>
 
+        {/* Why Choose Us */}
         <div className="about-features">
 
           <h2>Why Choose Us?</h2>
@@ -49,7 +69,7 @@ function About() {
 
             <div className="feature">
               <h3>📸 Professional Photography</h3>
-              <p>Capture every precious moment with stunning photos.</p>
+              <p>Capture every precious moment beautifully.</p>
             </div>
 
             <div className="feature">
@@ -59,18 +79,19 @@ function About() {
 
             <div className="feature">
               <h3>👨‍💼 Experienced Staff</h3>
-              <p>Friendly coordinators who ensure everything runs smoothly.</p>
+              <p>Friendly coordinators for a stress-free event.</p>
             </div>
 
             <div className="feature">
               <h3>🎉 Complete Event Management</h3>
-              <p>We handle every detail so you can enjoy your special day.</p>
+              <p>We handle every detail so you can enjoy your day.</p>
             </div>
 
           </div>
 
         </div>
 
+        {/* Statistics */}
         <div className="about-stats">
 
           <div className="stat">

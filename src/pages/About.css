@@ -1,153 +1,192 @@
-/* ===========================
-   ABOUT SECTION
-=========================== */
-
-.about{
-    padding:120px 8%;
-    background:linear-gradient(to bottom,#fff5f8,#ffffff);
-    text-align:center;
+.about {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background:
+        linear-gradient(rgba(255, 248, 251, 0.72), rgba(255, 255, 255, 0.88)),
+        url("/wedding-event/images/D2.jpeg") center/cover no-repeat fixed;
 }
 
-/* ===========================
-   HEADING
-=========================== */
-
-.about h1{
-    font-size:55px;
-    color:#d81b60;
-    margin-bottom:25px;
-    font-family:Georgia, serif;
-    text-shadow:2px 2px 8px rgba(0,0,0,0.15);
+.about-container {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
 }
 
-/* ===========================
-   ABOUT CONTENT
-=========================== */
-
-.about-content{
-    max-width:1000px;
-    margin:auto;
+.about-images {
+    display: grid;
+    gap: 1.2rem;
 }
 
-.about-content p{
-    font-size:20px;
-    line-height:1.8;
-    color:#555;
-    margin:20px 0;
+.about-images img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* ===========================
-   FEATURES
-=========================== */
-
-.about-features{
-    margin-top:70px;
+.about-images img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 18px 40px rgba(255, 20, 147, 0.22);
 }
 
-.about-features h2{
-    font-size:40px;
-    color:#e91e63;
-    margin-bottom:40px;
+.about-content {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.feature-box{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+.about-content h1 {
+    font-size: 3rem;
+    color: #6d214f;
+    margin-bottom: 1.25rem;
+    position: relative;
 }
 
-.feature{
-    background:#ffffff;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
-    transition:0.4s;
+.about-content h1::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(to right, #ff1493, #ffd700);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    border-radius: 20px;
 }
 
-.feature:hover{
-    transform:translateY(-10px);
-    box-shadow:0 15px 35px rgba(233,30,99,0.25);
+.about-content p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: justify;
 }
 
-.feature h3{
-    color:#ff1493;
-    margin-bottom:15px;
-    font-size:24px;
+.about-btn {
+    margin-top: 1rem;
+    padding: 15px 35px;
+    background: #ff1493;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.feature p{
-    color:#666;
-    font-size:17px;
-    line-height:1.6;
+.about-btn:hover {
+    background: #6d214f;
+    transform: translateY(-3px);
 }
 
-/* ===========================
-   STATISTICS
-=========================== */
-
-.about-stats{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-    margin-top:80px;
+.about-features {
+    margin-top: 4rem;
 }
 
-.stat{
-    width:220px;
-    padding:30px;
-    border-radius:20px;
-
-    background:linear-gradient(135deg,#ff4f8b,#ff80ab);
-
-    color:white;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-
-    transition:.4s;
+.about-features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6d214f;
+    margin-bottom: 2rem;
 }
 
-.stat:hover{
-    transform:scale(1.05);
+.feature-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
 }
 
-.stat h2{
-    font-size:42px;
-    margin-bottom:10px;
+.feature {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.8rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.stat p{
-    font-size:18px;
+.feature:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(255, 20, 147, 0.24);
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+.feature h3 {
+    color: #ff1493;
+    margin-bottom: 0.8rem;
+}
 
-@media(max-width:768px){
+.feature p {
+    color: #666;
+    line-height: 1.7;
+}
 
-    .about{
-        padding:100px 20px;
+.about-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.stat {
+    width: 220px;
+    padding: 1.8rem;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #6d214f, #ff1493);
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.35s ease;
+}
+
+.stat:hover {
+    transform: translateY(-8px);
+}
+
+.stat h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .about-container {
+        grid-template-columns: 1fr;
     }
 
-    .about h1{
-        font-size:38px;
+    .about-content {
+        text-align: center;
     }
 
-    .about-content p{
-        font-size:17px;
+    .about-content h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 100px 20px;
     }
 
-    .about-features h2{
-        font-size:32px;
+    .about-content h1 {
+        font-size: 2.2rem;
     }
 
-    .stat{
-        width:180px;
+    .about-content p {
+        font-size: 0.98rem;
     }
 
-    .stat h2{
-        font-size:34px;
+    .stat {
+        width: 180px;
     }
-
 }

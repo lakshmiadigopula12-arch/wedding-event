@@ -1,3 +1,4 @@
+import "./Testimonials.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TestimonialCard from "../components/TestimonialCard.jsx";
@@ -62,7 +63,7 @@ function Testimonials() {
 
       <Navbar/>
 
-      <section className="testimonials">
+      <section className="testimonials-page">
 
         <h1>Happy Couples ❤️</h1>
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function PackageCard(props) {
   return (
     <div className="card">
@@ -7,7 +9,9 @@ function PackageCard(props) {
 
       <h3>{props.price}</h3>
 
-      <button>Book Now</button>
+      <Link to="/Contact">
+        <button>Book Now</button>
+      </Link>
     </div>
   );
 }

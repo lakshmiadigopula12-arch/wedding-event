@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Hero.css";
 
 function Hero() {
@@ -10,8 +12,10 @@ function Hero() {
 
         <p>From "Yes" to "I Do", we create unforgettable weddings filled with
         love, elegance, and lifelong memories.</p>
-
+       
+        <Link to="/packages">
          <button>Plan Your Dream Wedding</button>
+         </Link>
 
       </div>
     </section>

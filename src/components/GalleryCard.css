@@ -1,3 +1,13 @@
+.gallery-section {
+    background-image: url("/images/contact background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

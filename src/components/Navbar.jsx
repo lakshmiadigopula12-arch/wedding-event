@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="/images/Logo image.jpeg" alt="Lakshmi's Wedding Event Logo" />
+        <img src="/wedding-event/images/Logo image.jpeg" alt="Lakshmi's Wedding Event Logo" />
       </div>
 
       <ul>

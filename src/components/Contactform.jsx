@@ -30,8 +30,31 @@ function ContactForm() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(formData);
+    const submittedData = { ...formData };
 
+    console.log(submittedData);
+
+    const whatsappNumber = "919703050007";
+    const whatsappMessage = `
+*New Contact Form Submission*
+
+*Full Name:* ${submittedData.fullName}
+*Email:* ${submittedData.email}
+*Phone:* ${submittedData.phone}
+*Wedding Date:* ${submittedData.weddingDate}
+*Wedding Time:* ${submittedData.weddingTime}
+*Venue:* ${submittedData.venue}
+*City:* ${submittedData.city}
+*Guests:* ${submittedData.guests}
+*Package Type:* ${submittedData.packageType}
+*Budget:* ${submittedData.budget}
+*Event Type:* ${submittedData.eventType}
+*Message:* ${submittedData.message}
+`;
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappURL, "_blank");
     alert("Thank you! Your wedding enquiry has been submitted.");
 
     setFormData({
@@ -48,7 +71,10 @@ function ContactForm() {
       eventType: "",
       message: ""
     });
+
+    e.target.reset();
   }
+
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
